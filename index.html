@@ -4,17 +4,22 @@
         <meta charset="utf-8">
         <title>Project: Event invite</title>
         <style>
-            body{font-family: fantasy; background-color: rgb(255, 254, 224)
+            body{font-family: fantasy; background-color: rgb(255, 254, 224);
+            font-size:large;
             }
-            
+            .info{border: 1px solid rgb(145, 0, 0);
+            border-top: 10px solid purple;
+            padding:15px;
+            }
+          
         </style>
     </head>
     <body>
         
-        <h1>You're invited to our summer solstice party! <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/seasonal/fireworks-scattered.png" width="50"></h1>
+        <h1 id="title">You're invited to our summer solstice party! </h1>
         <h2>To celebrate with flowers and good vibes!</h2>
         
-        <p id="intro">The details:</p>
+        <div class="info"><p id="intro">The details:</p>
         <ul>
             <li>aperitivo</li>
             <li>pool party</li>
@@ -22,8 +27,9 @@
             <li>bbq</li>
             <li>chilling</li>
         </ul>
-        
-        <p>The <em>secret</em> location:</p>
+        </div>
+        <br>
+        <div class="info"><p id="location">The <em>secret</em> location:</p>
         <ol>
             <li>take the first right</li>
             <li>then turn left</li>
@@ -31,7 +37,10 @@
             <li>go under the big oak</li>
             <li>and we'll see you right there!</li>
         </ol>
+        </div>
         
+        <div id="end"><p><img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/seasonal/fireworks-scattered.png" width="100%"></p></div>
         
     </body>
 </html>
+
